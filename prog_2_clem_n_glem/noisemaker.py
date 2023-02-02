@@ -18,7 +18,7 @@ class Window(QWidget):
         self.setLayout(layout)
 
         #Create our widgets
-        title_label = QLabel("Goober")
+        title_label = QLabel("BackGround Noise Generator")
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title_label.setFont(QFont("Brush Script MT", 30))
 
