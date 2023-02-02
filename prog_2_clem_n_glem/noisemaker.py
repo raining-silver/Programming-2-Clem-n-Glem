@@ -24,16 +24,21 @@ class Window(QWidget):
 
         description = "Use the Noise Background generator to make cool new backgrounds."
         description_label = QLabel(description)
-        title_label.setFont(QFont("Courier New", 20))
+        description_label.setFont(QFont("Courier New", 12))
 
         search_layout = QHBoxLayout()
         self.search_field = QLineEdit()
+        self.search_field.setFont(QFont("Comic Sans MS", 12))
+
         search_button = QPushButton("Generate")
+        search_button.setFont(QFont("Comic Sans MS", 12))
         search_layout.addWidget(self.search_field)
         search_layout.addWidget(search_button)
         
-        results_text = QTextEdit("      ")
         
+        results_text = QTextEdit("      ")
+        results_text.setFont(QFont("", ))
+
         layout.addWidget(title_label)
         layout.addWidget(description_label)
         layout.addLayout(search_layout)
