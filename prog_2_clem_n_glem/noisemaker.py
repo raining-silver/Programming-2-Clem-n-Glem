@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import (QApplication, QVBoxLayout, QWidget, 
                              QLabel, QHBoxLayout, QLineEdit, 
                              QPushButton, QTextEdit)
-from PyQt6.QtGui import QIcon
+from PyQt6.QtGui import QIcon, QFont
 from PyQt6.QtCore import Qt
 import sys
 
@@ -20,9 +20,11 @@ class Window(QWidget):
         #Create our widgets
         title_label = QLabel("Goober")
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        title_label.setFont(QFont("Brush Script MT", 30))
 
         description = "Use the Noise Background generator to make cool new backgrounds."
         description_label = QLabel(description)
+        title_label.setFont(QFont("Courier New", 20))
 
         search_layout = QHBoxLayout()
         self.search_field = QLineEdit()
