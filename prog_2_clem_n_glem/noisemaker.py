@@ -8,7 +8,7 @@ import sys
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.resize(300, 300)
+        self.resize(500, 500)
         self.setWindowTitle("goobertron")
         self.setWindowIcon(QIcon("icon.jpg"))
         self.UI()
@@ -21,13 +21,12 @@ class Window(QWidget):
         title_label = QLabel("Goober")
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        description = "Use the Noise Background generator to make"
-        description = " cool new backgrounds."
+        description = "Use the Noise Background generator to make cool new backgrounds."
         description_label = QLabel(description)
 
         search_layout = QHBoxLayout()
         self.search_field = QLineEdit()
-        search_button = QPushButton("   ")
+        search_button = QPushButton("Generate")
         search_layout.addWidget(self.search_field)
         search_layout.addWidget(search_button)
         
